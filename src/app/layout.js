@@ -21,8 +21,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex justify-center w-full  bg-stone-200`}
       >
+        <div className="bg-white w-full p-4 fixed flex justify-center">
+          <div className="flex w-3/5">
+            <h3 className="text-lg font-bold">Kerjoo Blog</h3>
+          </div>
+        </div>
         {children}
       </body>
     </html>
